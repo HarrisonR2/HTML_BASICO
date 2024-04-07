@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+    <!--El h1 es para titulos y subtituolos es con h2,h3,h4...-->
+    <h1>BASICO DE HTML</h1>
+    
+    <!--"P" es para poner el texto en general-->
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis distinctio voluptatum ?</P>
+    
+    <!--Es un salto de pagina, no se necesita cerrarlo-->
+    <br>
+    
+    <!--Son enlaces que podemos hacer con una imagen pero con un "src" con enlace relativo.
+        1)."Whidth" y "Height", son parametros de alto y ancho de la imagen
+        2). "alt", texto alternativo si no carga la imagen-->
+    
+    <img src="imagenes/Imagen.1.png" width="250" height="250" alt="Cara Feliz">
+    <br>
+
+    <!--"href", es para poner un elace que al darle click te lleva donde dice -->
+    <a href="https://web.whatsapp.com">whatsapp web</a>
+    <br>
+
+    <!--Tablas. "table", inicio descripcion tabla; "tr" comienza fila tabla; "th", indica celda header de columna; "td", señala celda-->
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>País</th>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>25</td>
+            <td>Argentina</td>
+        </tr>
+        <tr>
+            <td>María</td>
+            <td>30</td>
+            <td>España</td>
+        </tr>
+        <tr>
+            <td>Ahmed</td>
+            <td>22</td>
+            <td>Egipto</td>
+        </tr>
+        </table>
+    <br>
+
+    <!--Listas ordenadas(ol) y desordenadas(ul), las dos se llena con (li) -->
+    <p>Lenguajes de Frontend</p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <p>Contenidos de asignaturas</p>
+    <ol>
+        <li>Tema 1</li>
+        <li>Tema 2</li>
+        <li>Tema 3</li>
+    </ol>
+    <br>
+
+    <!-- Formularios, se inician con "<form>", este es un contenedor de elementos; "input" almacena info user;"text", texto;
+        "radio" boton (solo una de varias); "checkbox" boton (una o ninguna de varias); "submint" boton(completar formulario); 
+        "password" texto oculto; "label" etiqueta visula para formulario -->
+    
+        <form>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="contraseña">Contraseña:</label><br>
+            <input type="password" id="contraseña" name="contraseña" required><br><br>
+            
+            <label>Género:</label><br>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label><br>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">Femenino</label><br><br>
+            
+            <label for="terminos">Acepto los términos y condiciones:</label><br>
+            <input type="checkbox" id="terminos" name="terminos" required><br><br>
+            
+            <input type="submit" value="Confirmar">
+            </form>
+</body>
+</html>
